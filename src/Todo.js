@@ -1,4 +1,5 @@
 import React from 'react'
+import './Todo.css'
 
 function Todo({ todo, toggleTodo }) {
 
@@ -7,7 +8,7 @@ function Todo({ todo, toggleTodo }) {
     }
 
     return (
-        <div>
+        <div className='todo'>
             <label>
                 <input 
                     type='checkbox' 
