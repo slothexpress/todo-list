@@ -2,14 +2,18 @@
   border: solid blue;
   margin: 2rem;
   display: flex;
+  min-width: 500px;
+  align-items: center;
 
 }
 
 .KanbanList {
-  margin: 10px;
+    margin: 10px;
     border: solid black;
-    width: 200px;
+    min-width: 200px;
+    max-width: 250px;
     background-color: white;
+    
  
   }   
   

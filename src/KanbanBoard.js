@@ -9,6 +9,11 @@ export default function KanbanBoard() {
         <KanbanList title="TODO" />
 
         <KanbanList title="DONE" />
+        
+        <KanbanList title="DONE" />
+
+        <KanbanList title="DONE" />
+
 
     </div>
   );
