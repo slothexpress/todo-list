@@ -17,13 +17,23 @@ function App() {
     if(storedTodos) {
       setTodos(storedTodos);
     }
-    
+
   }, []);
 
   /* called every time something in the todos array changes */
   useEffect(() => {
     localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(todos))
   }, [todos]);
+
+
+  function toggleTodo(id) {
+    const newTodos = [...todos];
+    const todo = newTodos.find(todo => todo.id === id)
+    
+    /* toggles the complete flag/checkbox */
+    todo.complete = !todo.complete;
+    setTodos(newTodos);
+  }
 
   function handleAddTodo(event) {
     const name = todoNameRef.current.value;
@@ -49,7 +59,7 @@ function App() {
       <button>Clear completed</button>
       <div>0 left to do</div>
 
-      <TodoList todos={todos} />
+      <TodoList todos={todos} toggleTodo={toggleTodo} />
    
     </div>
   );
