@@ -1,6 +1,13 @@
-.App {
-  text-align: center;
+*, *::before, *::after {
+  box-sizing: border-box;
 }
+
+body {
+  margin: 0;
+  background: linear-gradient(to left, rgb(242, 224, 184), rgb(195, 251, 246));
+}
+
+/*
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -16,3 +23,6 @@
     transform: rotate(360deg);
   }
 }
+
+
+*/

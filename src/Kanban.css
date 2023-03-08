@@ -1,0 +1,21 @@
+.KanbanBoard {
+  border: solid blue;
+  margin: 2rem;
+  display: flex;
+
+}
+
+.KanbanList {
+  margin: 10px;
+    border: solid black;
+    width: 200px;
+    background-color: white;
+ 
+  }   
+  
+.ListItem {
+    font-size: 1rem;
+    color: red;
+    border: solid rgb(86, 177, 24);
+
+  }
