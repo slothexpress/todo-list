@@ -1,9 +1,17 @@
 .todo {
-    border: solid white;
-    border-radius: 5px;
     margin: 5px;
     padding: 15px;
+    display: flex;
+    align-items: center;
 }
 
+.todo span {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 5vh;
+}
 
-
+.todo input[type="checkbox"] {
+    height: 24px;
+    width: 24px;
+    margin-right: 10px;
+}

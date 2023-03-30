@@ -1,32 +1,58 @@
 *, *::before, *::after {
   box-sizing: border-box;
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
-  padding: 5px;
-
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 1vw;
 }
 
 body {
-  margin: 10px;
+  margin: 2vw;
   background: linear-gradient(to left, rgb(242, 224, 184), rgb(195, 251, 246));
-
 }
 
-/*
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+input[type='text'] {
+  font-size: 5vw;
+  width: 80vw;
+  margin-bottom: 4vw;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button {
+  font-size: 3vw;
+  padding: 1vw 2vw;
+  margin: 2vw;
 }
 
+button:first-child {
+  margin-right: 2vw;
+}
 
-*/
+.todo-count {
+  font-size: 3vw;
+  margin-top: 2vw;
+}
+
+.todo-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30vw, 1fr));
+  grid-gap: 2vw;
+}
+
+@media screen and (min-width: 768px) {
+  input[type='text'] {
+    font-size: 2vw;
+    width: 40vw;
+  }
+
+  button {
+    font-size: 1.5vw;
+    padding: 0.5vw 1vw;
+  }
+
+  .todo-count {
+    font-size: 2vw;
+  }
+
+  .todo-list {
+    grid-template-columns: repeat(auto-fit, minmax(20vw, 1fr));
+    grid-gap: 1vw;
+  }
+}
